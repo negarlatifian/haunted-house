@@ -44,6 +44,16 @@ const bricksRoughnessTexture = textureLoader.load(
   '/textures/bricks/roughness.jpg'
 );
 
+const grassColorTexture = textureLoader.load('/textures/grass/color.jpg');
+grassColorTexture.colorSpace = THREE.SRGBColorSpace;
+const grassAmbientOcclusionTexture = textureLoader.load(
+  '/textures/grass/ambientOcclusion.jpg'
+);
+const grassNormalTexture = textureLoader.load('/textures/grass/normal.jpg');
+const grassRoughnessTexture = textureLoader.load(
+  '/textures/grass/roughness.jpg'
+);
+
 /**
  * House
  */
