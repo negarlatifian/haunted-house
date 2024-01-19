@@ -54,6 +54,10 @@ const grassRoughnessTexture = textureLoader.load(
   '/textures/grass/roughness.jpg'
 );
 
+grassColorTexture.repeat.set(8, 8);
+grassAmbientOcclusionTexture.repeat.set(8, 8);
+grassNormalTexture.repeat.set(8, 8);
+grassRoughnessTexture.repeat.set(8, 8);
 /**
  * House
  */
