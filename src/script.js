@@ -44,6 +44,16 @@ const bricksRoughnessTexture = textureLoader.load(
   '/textures/bricks/roughness.jpg'
 );
 
+const gravesColorTexture = textureLoader.load('/textures/graves/color.jpg');
+gravesColorTexture.colorSpace = THREE.SRGBColorSpace;
+const gravesAmbientOcclusionTexture = textureLoader.load(
+  '/textures/graves/ao.jpg'
+);
+const gravesNormalTexture = textureLoader.load('/textures/graves/normal.jpg');
+const gravesRoughnessTexture = textureLoader.load(
+  '/textures/graves/roughness.jpg'
+);
+
 const grassColorTexture = textureLoader.load('/textures/grass/color.jpg');
 grassColorTexture.colorSpace = THREE.SRGBColorSpace;
 const grassAmbientOcclusionTexture = textureLoader.load(
