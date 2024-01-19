@@ -157,7 +157,13 @@ const graves = new THREE.Group();
 scene.add(graves);
 
 const graveGeometry = new THREE.BoxGeometry(0.6, 0.8, 0.2);
-const graveMaterial = new THREE.MeshBasicMaterial({ color: '#636363' });
+const graveMaterial = new THREE.MeshBasicMaterial({
+  map: gravesColorTexture,
+  transparent: true,
+  aoMap: gravesAmbientOcclusionTexture,
+  normalMap: gravesNormalTexture,
+  roughnessMap: gravesRoughnessTexture,
+});
 
 for (let i = 0; i < 50; i++) {
   const angle = Math.random() * Math.PI * 2; //random angle
