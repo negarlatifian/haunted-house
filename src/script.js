@@ -275,6 +275,11 @@ const tick = () => {
   ghost1.position.x = Math.cos(ghost1Angle) * 4;
   ghost1.position.z = Math.sin(ghost1Angle) * 4;
   ghost1.position.y = Math.sin(ghost1Angle * 3);
+  // we make the second ghost to go the other direction by multiplying minus
+  const ghost2Angle = -elapsedTime * 0.32;
+  ghost2.position.x = Math.cos(ghost2Angle) * 5;
+  ghost2.position.z = Math.sin(ghost2Angle) * 5;
+  ghost2.position.y = Math.sin(ghost2Angle * 4) + Math.sin(ghost2Angle * 2.5);
   // Update controls
   controls.update();
 
