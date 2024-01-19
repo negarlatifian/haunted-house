@@ -267,6 +267,14 @@ const clock = new THREE.Clock();
 const tick = () => {
   const elapsedTime = clock.getElapsedTime();
 
+  // ghosts
+  // We are gonna use elapsed time as our angle, because we want the ghost to move around the house we'll use
+  // the x & z axis
+  // to decrease the speed of movement we can multiply the angle by 0.5
+  const ghost1Angle = elapsedTime * 0.5;
+  ghost1.position.x = Math.cos(ghost1Angle) * 4;
+  ghost1.position.z = Math.sin(ghost1Angle) * 4;
+  ghost1.position.y = Math.sin(ghost1Angle * 3);
   // Update controls
   controls.update();
 
