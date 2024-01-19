@@ -58,6 +58,19 @@ grassColorTexture.repeat.set(8, 8);
 grassAmbientOcclusionTexture.repeat.set(8, 8);
 grassNormalTexture.repeat.set(8, 8);
 grassRoughnessTexture.repeat.set(8, 8);
+
+// by default textures don't repeat and we need to activate them as below:
+// wrapS for repeat on x
+grassColorTexture.wrapS = THREE.RepeatWrapping;
+grassAmbientOcclusionTexture.wrapS = THREE.RepeatWrapping;
+grassNormalTexture.wrapS = THREE.RepeatWrapping;
+grassRoughnessTexture.wrapS = THREE.RepeatWrapping;
+// wrapT for repeat on y
+grassColorTexture.wrapT = THREE.RepeatWrapping;
+grassAmbientOcclusionTexture.wrapT = THREE.RepeatWrapping;
+grassNormalTexture.wrapT = THREE.RepeatWrapping;
+grassRoughnessTexture.wrapT = THREE.RepeatWrapping;
+
 /**
  * House
  */
